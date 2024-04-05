@@ -21,9 +21,9 @@ const Tabs = ({ tabs }) => {
                     </button>
                 ))}
             </div>
-            <div className="tabContent">
-                {tabs[activeTab].content}
-            </div>
+            <div className={`tabContent ${activeTab === 1 ? 'fade-in' : 'fade-out'}`}>
+        {tabs[activeTab].content}
+      </div>
         </div>
     )
 }
