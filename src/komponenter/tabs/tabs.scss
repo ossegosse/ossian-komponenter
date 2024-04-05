@@ -5,18 +5,21 @@
         justify-content: space-between;
         gap: 0.5rem;
         button {
-            width: 10rem;
+            width: 8rem;
             height: 3rem;
             margin-bottom: 0.5rem;
             border-radius: 10px;
             transition: background-color 0.3s ease, border-radius 0.5s ease;
             background-color: white;
+            border-style:dashed;
         }
         button:hover {
             cursor: pointer;
-            background-color: rgb(73, 113, 187);
+            background-color: rgb(102, 132, 189);
             color: white;
             border-radius: 30px;
+            transform: scale(1.3);
+           
         }
     }
     .tab-content {
