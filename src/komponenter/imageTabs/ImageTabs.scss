@@ -1,0 +1,24 @@
+.ImageTabs {
+    img {
+        border-radius: 20px;
+        width: 25rem;
+        height: 37.5rem;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+      p {
+        font-size: 16px;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      /* transform: translateY(20px); */
+    }
+    100% {
+      opacity: 1;
+      /* transform: translateY(0); */
+    }
+  }

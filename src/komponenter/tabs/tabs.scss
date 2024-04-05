@@ -1,8 +1,10 @@
-.tabs {
+.Tabs {
     height: 10rem;
+    width: 26rem;
     .tabButtons {
         display: flex;
         justify-content: space-between;
+        gap: 0.5rem;
         button {
             width: 10rem;
             height: 3rem;
@@ -18,22 +20,24 @@
             border-radius: 30px;
         }
     }
-    img {
-        border-radius: 20px;
+    .tab-content {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .tab-pane {
+            display: none;
+            transition: opacity 0.3s ease;
+          }
+          
+          .tab-pane.active {
+            display: block;
+            opacity: 1;
+          }
     }
 }
 
-.tabContent {
-    transition: opacity 0.3s ease; /* Övergångseffekt på opacity (genomskinlighet) som varar i 0.3 sekunder med en jämn fördelning av övergången */
-  }
-  
-  .fade-in {
-    opacity: 1; /* När innehållet visas sätts opacity till 1 */
-  }
-  
-  .fade-out {
-    opacity: 0; /* När innehållet göms sätts opacity till 0 */
-  }
+
 
 
 
